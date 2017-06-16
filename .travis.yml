@@ -1,0 +1,10 @@
+---
+language: bash 
+
+addons:
+  apt:
+    packages:
+    - bc    
+
+script:
+  - bash code_doc_per.sh
