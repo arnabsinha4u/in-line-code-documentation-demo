@@ -1,7 +1,7 @@
 # In-line code documentation demo for DevOps Days Amsterdam, 2017
 This repository has 4 branches:
 * master - Baseline for the demo
-* documentation_improvement_1
+* **documentation_improvement_1**
   - Documentation improved in only one Javascript (fibonacci_generic.js) thus partial improvement in Documentation coverage and maturity status
   - Build breaks due to non-compliance of Documentation vs Code ratio
 * documentation_improvement_2
