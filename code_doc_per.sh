@@ -1,11 +1,12 @@
 #!/usr/bin/sh
-limit=0.4
+limit=0.4 #Set threshold for Documentation vs Code Ratio
+
 doc=`grep "//.*" lib/* | wc -l`
 code=`grep -v "//.*" lib/* | wc -l`
 val=`bc -l <<< "$doc / $code"`
 
-echo "LoC: $code"
-echo "LoD: $doc"
+echo "LoC: $code" #Lines of Code
+echo "LoD: $doc" #Lines of Documentation
 echo "Documentation vs Code Ratio: $val"
 
 if ((`bc <<< "$val>$limit"`))
